@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const rituals = [
   { icon: Flame, label: "Meditate" },
-  { icon: BookOpen, label: "Journal" },
+  { icon: BookOpen, label: "Reading" },
   { icon: Music, label: "Mantra" },
   { icon: AudioLines, label: "Chant" },
   { icon: Wind, label: "Breathe" },
@@ -24,6 +24,8 @@ const QuickRituals = () => {
             key={i}
             onClick={() => {
               if (ritual.label === "Mantra") navigate("/mantra");
+              if (ritual.label === "Breathe") navigate("/breathe");
+              if (ritual.label === "Reading") navigate("/reading");
             }}
             className="flex flex-col items-center gap-2.5 min-w-[64px] group animate-scale-in"
             style={{ animationDelay: `${i * 80}ms` }}

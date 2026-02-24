@@ -7,6 +7,10 @@ import Landing from "./pages/Landing";
 import Home from "./pages/Index";
 import Chat from "./pages/Chat";
 import Mantra from "./pages/Mantra";
+import Profile from "./pages/Profile";
+import Explore from "./pages/Explore";
+import Breathe from "./pages/Breathe";
+import Reading from "./pages/Reading";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +26,10 @@ const App = () => (
           <Route path="/home" element={<Home />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/mantra" element={<Mantra />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/breathe" element={<Breathe />} />
+          <Route path="/reading" element={<Reading />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

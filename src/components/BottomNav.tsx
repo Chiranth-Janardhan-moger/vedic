@@ -1,11 +1,11 @@
-import { Home, Compass, TrendingUp, MessageCircle } from "lucide-react";
+import { Home, Compass, MessageCircle, User } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const tabs = [
   { icon: Home, label: "Home", path: "/home" },
-  { icon: Compass, label: "Explore", path: "/home" },
+  { icon: Compass, label: "Explore", path: "/explore" },
   { icon: MessageCircle, label: "Ask Rishi", path: "/chat" },
-  { icon: TrendingUp, label: "Progress", path: "/home" },
+  { icon: User, label: "Profile", path: "/profile" },
 ];
 
 const BottomNav = () => {
